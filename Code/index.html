@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" href="main.css">
+	<script type="text/javascript" src="api.js"></script>
+	<title>Capsule.me</title>
+</head>
+<body>
+	<h1>Capsule.me</h1>
+	<div class="container">
+		<div class="row">
+			<div class="col-12">Welcome to the Time Capsule! Choose the type of capsule you want to add content to:</div>
+		</div>
+		<div class="row types" id="groupNameDiv">
+			<div class="col-3 btn btn-primary" id="GroupButton">Group Capsule</div>
+			<div class="col-3 btn btn-primary" id="PersonalButton">Personal Capsule</div>
+		</div>
+	</div>	
+	<div id="group">
+		
+		<button type="button" id="addGroupName" class="btn btn-secondary groupType" data-toggle="modal-dialog" data-target="#addNewGroup">Add New Group</button>
+
+	</div>
+	<div id="personal" class="col-3">
+	
+	</div>
+	
+	<div class="modal" id="addGroupModal">
+		<div class="modal-content">
+			<span class="close">&times;</span>
+			<p>New Group Name:</p>
+			<input type="text" name="newName">
+			<button type="button" class="btn btn-submit col-3" id="submitNewName">Submit</button>
+		</div>
+	</div>
+	
+</body>
+</html>
